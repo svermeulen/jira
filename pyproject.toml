@@ -1,3 +1,9 @@
+[tool.poetry]
+name = "jira"
+version = "2.1.0-svkj"
+description = ""
+authors = ["Steve Vermeulen <sfvermeulen@gmail.com>"]
+
 [build-system]
 requires = [
   "setuptools >= 41.0.0",

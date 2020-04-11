@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jira"
-version = "2.1.0-svkj"
+version = "2.1.0+svkj"
 description = ""
 authors = ["Steve Vermeulen <sfvermeulen@gmail.com>"]
 

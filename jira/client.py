@@ -2813,12 +2813,12 @@ class JIRA(object):
         return self._session.delete(url, params=params)
 
     def search_users(
-        self, user, startAt=0, maxResults=50, includeActive=True, includeInactive=False
+        self, query, startAt=0, maxResults=50, includeActive=True, includeInactive=False
     ):
         """Get a list of user Resources that match the specified search string.
 
-        :param user: a string to match usernames, name or email against.
-        :type user: str
+        :param query: a string to match usernames, name or email against.
+        :type query: str
         :param startAt: index of the first user to return.
         :type startAt: int
         :param maxResults: maximum number of users to return.
@@ -2833,7 +2833,7 @@ class JIRA(object):
         :rtype: ResultList
         """
         params = {
-            "username": user,
+            "query": query,
             "includeActive": includeActive,
             "includeInactive": includeInactive,
         }
